@@ -11,6 +11,20 @@ crystal_clear:
   # 毛玻璃效果
   ha-card-border-radius: "12px"
   ha-card-box-shadow: "0 2px 4px 0 rgba(0,0,0,0.16)"
+  backdrop-filter: "blur(10px)"
+  -webkit-backdrop-filter: "blur(10px)"
+  
+  # 字体设置
+  primary-font-family: "'Segoe UI', Roboto, sans-serif"
+  paper-font-common-base_-_font-family: "'Segoe UI', Roboto, sans-serif"
+  paper-font-common-code_-_font-family: "Consolas, 'Courier New', monospace"
+  
+  # 动画效果
+  ha-card-border-radius: "12px"
+  ha-card-box-shadow: "0 2px 4px rgba(0,0,0,0.16)"
+  ha-card-hover-box-shadow: "0 8px 16px rgba(0,0,0,0.24)"
+  transition-duration: "0.3s"
+  transition-timing-function: "cubic-bezier(0.4, 0, 0.2, 1)"
   
   modes:
     light:
@@ -20,6 +34,9 @@ crystal_clear:
       primary-text-color: "rgba(0, 0, 0, 0.87)"
       secondary-text-color: "rgba(0, 0, 0, 0.6)"
       divider-color: "rgba(0, 0, 0, 0.08)"
+      disabled-text-color: "rgba(0, 0, 0, 0.38)"
+      paper-item-icon-color: "rgba(0, 0, 0, 0.54)"
+      paper-item-selected_-_background-color: "rgba(0, 120, 212, 0.1)"
       
     dark:
       # 暗黑模式
@@ -28,43 +45,77 @@ crystal_clear:
       primary-text-color: "rgba(255, 255, 255, 0.87)"
       secondary-text-color: "rgba(255, 255, 255, 0.6)"
       divider-color: "rgba(255, 255, 255, 0.08)"
+      disabled-text-color: "rgba(255, 255, 255, 0.38)"
+      paper-item-icon-color: "rgba(255, 255, 255, 0.54)"
+      paper-item-selected_-_background-color: "rgba(0, 120, 212, 0.2)"
   
   # 基础设备状态颜色
   state-light-on-color: "rgba(255, 215, 0, 0.9)"
+  state-light-off-color: "rgba(158, 158, 158, 0.9)"
   state-climate-heat-color: "rgba(255, 107, 107, 0.9)"
   state-climate-cool-color: "rgba(79, 172, 254, 0.9)"
+  state-climate-auto-color: "rgba(76, 175, 80, 0.9)"
   state-cover-open-color: "rgba(76, 175, 80, 0.9)"
+  state-cover-closing-color: "rgba(255, 152, 0, 0.9)"
   state-media_player-active-color: "rgba(233, 30, 99, 0.9)"
+  state-media_player-idle-color: "rgba(158, 158, 158, 0.9)"
   
   # 传感器状态颜色
   state-sensor-temperature-color: "rgba(255, 152, 0, 0.9)"
   state-sensor-humidity-color: "rgba(3, 169, 244, 0.9)"
   state-sensor-air_quality-color: "rgba(76, 175, 80, 0.9)"
+  state-sensor-battery-color: "rgba(76, 175, 80, 0.9)"
+  state-sensor-battery-low-color: "rgba(244, 67, 54, 0.9)"
   state-binary_sensor-motion-active-color: "rgba(244, 67, 54, 0.9)"
   state-binary_sensor-door-active-color: "rgba(63, 81, 181, 0.9)"
+  state-binary_sensor-window-active-color: "rgba(63, 81, 181, 0.9)"
+  state-binary_sensor-presence-active-color: "rgba(76, 175, 80, 0.9)"
+  state-binary_sensor-smoke-active-color: "rgba(244, 67, 54, 0.9)"
   
   # 安防设备状态颜色
   state-alarm_control_panel-armed_home-color: "rgba(255, 152, 0, 0.9)"
   state-alarm_control_panel-armed_away-color: "rgba(244, 67, 54, 0.9)"
+  state-alarm_control_panel-armed_night-color: "rgba(63, 81, 181, 0.9)"
   state-alarm_control_panel-triggered-color: "rgba(211, 47, 47, 0.9)"
   state-camera-recording-color: "rgba(244, 67, 54, 0.9)"
+  state-camera-streaming-color: "rgba(76, 175, 80, 0.9)"
   state-lock-locked-color: "rgba(76, 175, 80, 0.9)"
   state-lock-unlocked-color: "rgba(244, 67, 54, 0.9)"
+  state-lock-pending-color: "rgba(255, 152, 0, 0.9)"
   
   # 能源监测状态颜色
-  state-sensor-power-color: "rgba(255, 193, 7, 0.9)"
+  state-sensor-power-color: "rgba(255, 152, 0, 0.9)"
+  state-sensor-power-high-color: "rgba(244, 67, 54, 0.9)"
+  state-sensor-power-low-color: "rgba(76, 175, 80, 0.9)"
   state-sensor-energy-color: "rgba(103, 58, 183, 0.9)"
   state-sensor-water-color: "rgba(3, 169, 244, 0.9)"
+  state-sensor-gas-color: "rgba(255, 152, 0, 0.9)"
   state-sensor-solar-color: "rgba(253, 216, 53, 0.9)"
+  state-sensor-battery-charging-color: "rgba(76, 175, 80, 0.9)"
   
   # 自动化相关状态颜色
   state-automation-active-color: "rgba(76, 175, 80, 0.9)"
+  state-automation-error-color: "rgba(244, 67, 54, 0.9)"
   state-scene-active-color: "rgba(0, 150, 136, 0.9)"
   state-script-active-color: "rgba(0, 121, 107, 0.9)"
+  state-timer-active-color: "rgba(156, 39, 176, 0.9)"
+  state-schedule-active-color: "rgba(76, 175, 80, 0.9)"
   
   # 其他设备状态颜色
   state-fan-active-color: "rgba(3, 169, 244, 0.9)"
+  state-fan-idle-color: "rgba(158, 158, 158, 0.9)"
   state-vacuum-active-color: "rgba(0, 150, 136, 0.9)"
+  state-vacuum-docked-color: "rgba(76, 175, 80, 0.9)"
+  state-vacuum-error-color: "rgba(244, 67, 54, 0.9)"
   state-humidifier-active-color: "rgba(3, 169, 244, 0.9)"
   state-switch-active-color: "rgba(76, 175, 80, 0.9)"
-  state-input_boolean-active-color: "rgba(0, 121, 107, 0.9)" 
+  state-input_boolean-active-color: "rgba(0, 121, 107, 0.9)"
+  state-update-active-color: "rgba(0, 120, 212, 0.9)"
+  state-person-home-color: "rgba(76, 175, 80, 0.9)"
+  state-person-away-color: "rgba(244, 67, 54, 0.9)"
+  
+  # 图表和统计颜色
+  state-chart-primary-color: "rgba(0, 120, 212, 0.9)"
+  state-chart-secondary-color: "rgba(63, 81, 181, 0.9)"
+  state-chart-accent-color: "rgba(156, 39, 176, 0.9)"
+  state-chart-neutral-color: "rgba(158, 158, 158, 0.9)" 

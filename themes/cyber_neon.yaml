@@ -6,6 +6,23 @@ cyber_neon:
   # 通用设置
   card-background-color: "rgba(18, 21, 40, 0.85)"
   paper-card-background-color: "rgba(18, 21, 40, 0.85)"
+  paper-dialog-background-color: "rgba(18, 21, 40, 0.85)"
+  
+  # 卡片样式
+  ha-card-border-radius: "8px"
+  ha-card-box-shadow: "0 4px 12px rgba(0, 243, 255, 0.2)"
+  
+  # 字体设置
+  primary-font-family: "'Rajdhani', 'Orbitron', sans-serif"
+  paper-font-common-base_-_font-family: "'Rajdhani', 'Orbitron', sans-serif"
+  paper-font-common-code_-_font-family: "'Share Tech Mono', monospace"
+  
+  # 动画效果
+  ha-card-border-radius: "8px"
+  ha-card-box-shadow: "0 4px 12px rgba(0, 243, 255, 0.2)"
+  ha-card-hover-box-shadow: "0 8px 24px rgba(255, 0, 229, 0.3)"
+  transition-duration: "0.3s"
+  transition-timing-function: "cubic-bezier(0.4, 0, 0.2, 1)"
   
   modes:
     light:
@@ -15,6 +32,9 @@ cyber_neon:
       primary-text-color: "#00F3FF"
       secondary-text-color: "#FF00E5"
       divider-color: "rgba(0, 243, 255, 0.2)"
+      disabled-text-color: "rgba(255, 255, 255, 0.5)"
+      paper-item-icon-color: "#00F3FF"
+      paper-item-selected_-_background-color: "rgba(0, 243, 255, 0.15)"
       
     dark:
       # 暗黑模式
@@ -23,43 +43,77 @@ cyber_neon:
       primary-text-color: "#00F3FF"
       secondary-text-color: "#FF00E5"
       divider-color: "rgba(0, 243, 255, 0.2)"
+      disabled-text-color: "rgba(255, 255, 255, 0.5)"
+      paper-item-icon-color: "#00F3FF"
+      paper-item-selected_-_background-color: "rgba(0, 243, 255, 0.15)"
   
   # 基础设备状态颜色
   state-light-on-color: "#FFF500"
+  state-light-off-color: "#666666"
   state-climate-heat-color: "#FF3D00"
   state-climate-cool-color: "#00F3FF"
+  state-climate-auto-color: "#00FF9F"
   state-cover-open-color: "#00FF9F"
+  state-cover-closing-color: "#FFA000"
   state-media_player-active-color: "#FF00E5"
+  state-media_player-idle-color: "#666666"
   
   # 传感器状态颜色
   state-sensor-temperature-color: "#FF5722"
   state-sensor-humidity-color: "#00F3FF"
   state-sensor-air_quality-color: "#00FF9F"
+  state-sensor-battery-color: "#00FF9F"
+  state-sensor-battery-low-color: "#FF3D00"
   state-binary_sensor-motion-active-color: "#FF00E5"
   state-binary_sensor-door-active-color: "#00F3FF"
+  state-binary_sensor-window-active-color: "#00F3FF"
+  state-binary_sensor-presence-active-color: "#00FF9F"
+  state-binary_sensor-smoke-active-color: "#FF3D00"
   
   # 安防设备状态颜色
   state-alarm_control_panel-armed_home-color: "#FFA000"
   state-alarm_control_panel-armed_away-color: "#FF3D00"
+  state-alarm_control_panel-armed_night-color: "#00F3FF"
   state-alarm_control_panel-triggered-color: "#FF0000"
   state-camera-recording-color: "#FF00E5"
+  state-camera-streaming-color: "#00FF9F"
   state-lock-locked-color: "#00FF9F"
   state-lock-unlocked-color: "#FF3D00"
+  state-lock-pending-color: "#FFA000"
   
   # 能源监测状态颜色
   state-sensor-power-color: "#FFA000"
+  state-sensor-power-high-color: "#FF3D00"
+  state-sensor-power-low-color: "#00FF9F"
   state-sensor-energy-color: "#00F3FF"
   state-sensor-water-color: "#00F3FF"
+  state-sensor-gas-color: "#FFA000"
   state-sensor-solar-color: "#FFF500"
+  state-sensor-battery-charging-color: "#00FF9F"
   
   # 自动化相关状态颜色
   state-automation-active-color: "#00FF9F"
+  state-automation-error-color: "#FF3D00"
   state-scene-active-color: "#00F3FF"
   state-script-active-color: "#FF00E5"
+  state-timer-active-color: "#FF00E5"
+  state-schedule-active-color: "#00FF9F"
   
   # 其他设备状态颜色
   state-fan-active-color: "#00F3FF"
+  state-fan-idle-color: "#666666"
   state-vacuum-active-color: "#00FF9F"
+  state-vacuum-docked-color: "#00FF9F"
+  state-vacuum-error-color: "#FF3D00"
   state-humidifier-active-color: "#00F3FF"
   state-switch-active-color: "#00FF9F"
-  state-input_boolean-active-color: "#FF00E5" 
+  state-input_boolean-active-color: "#FF00E5"
+  state-update-active-color: "#00F3FF"
+  state-person-home-color: "#00FF9F"
+  state-person-away-color: "#FF3D00"
+  
+  # 图表和统计颜色
+  state-chart-primary-color: "#00F3FF"
+  state-chart-secondary-color: "#FF00E5"
+  state-chart-accent-color: "#FFF500"
+  state-chart-neutral-color: "#666666" 

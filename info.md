@@ -1,7 +1,7 @@
 # SYMI Themes
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/custom-components/hacs)
-[![ha_version](https://img.shields.io/badge/Home%20Assistant-2025.1.2-blue.svg)](https://www.home-assistant.io)
+[![ha_version](https://img.shields.io/badge/Home%20Assistant-2023.1.0-blue.svg)](https://www.home-assistant.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Release][releases-shield]][releases]
 [![GitHub Activity][commits-shield]][commits]
@@ -12,6 +12,11 @@
 [commits]: https://github.com/symi-daguo/symi-themes/commits/main
 
 一套为 Home Assistant 设计的现代化主题集合，专注于现代设计趋势。
+
+## 版本要求
+
+- 支持 Home Assistant 2023.1.0 及以上版本
+- 已在 Core 2024.12.5 / Frontend 20241127.8 环境下完整测试
 
 ## 主题列表
 

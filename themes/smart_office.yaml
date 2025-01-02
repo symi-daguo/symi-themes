@@ -11,6 +11,18 @@ smart_office:
   ha-card-border-radius: "4px"
   ha-card-box-shadow: "0 2px 4px rgba(0,0,0,0.14)"
   
+  # 字体设置
+  primary-font-family: "'Segoe UI', Roboto, sans-serif"
+  paper-font-common-base_-_font-family: "'Segoe UI', Roboto, sans-serif"
+  paper-font-common-code_-_font-family: "Consolas, 'Courier New', monospace"
+  
+  # 动画效果
+  ha-card-border-radius: "4px"
+  ha-card-box-shadow: "0 2px 4px rgba(0,0,0,0.14)"
+  ha-card-hover-box-shadow: "0 4px 8px rgba(0,0,0,0.20)"
+  transition-duration: "0.2s"
+  transition-timing-function: "ease-in-out"
+  
   modes:
     light:
       # 明亮模式
@@ -19,6 +31,9 @@ smart_office:
       primary-text-color: "#252525"
       secondary-text-color: "#666666"
       divider-color: "#E1E1E1"
+      disabled-text-color: "#9E9E9E"
+      paper-item-icon-color: "#757575"
+      paper-item-selected_-_background-color: "#E3F2FD"
       
     dark:
       # 暗黑模式
@@ -27,43 +42,77 @@ smart_office:
       primary-text-color: "#FFFFFF"
       secondary-text-color: "#CCCCCC"
       divider-color: "#404040"
+      disabled-text-color: "#666666"
+      paper-item-icon-color: "#9E9E9E"
+      paper-item-selected_-_background-color: "#1E3F5F"
   
   # 基础设备状态颜色
   state-light-on-color: "#0078D4"
+  state-light-off-color: "#666666"
   state-climate-heat-color: "#D83B01"
   state-climate-cool-color: "#0078D4"
+  state-climate-auto-color: "#107C10"
   state-cover-open-color: "#107C10"
+  state-cover-closing-color: "#CA5010"
   state-media_player-active-color: "#881798"
+  state-media_player-idle-color: "#666666"
   
   # 传感器状态颜色
   state-sensor-temperature-color: "#CA5010"
   state-sensor-humidity-color: "#0078D4"
   state-sensor-air_quality-color: "#107C10"
+  state-sensor-battery-color: "#107C10"
+  state-sensor-battery-low-color: "#D83B01"
   state-binary_sensor-motion-active-color: "#D83B01"
   state-binary_sensor-door-active-color: "#2B579A"
+  state-binary_sensor-window-active-color: "#2B579A"
+  state-binary_sensor-presence-active-color: "#107C10"
+  state-binary_sensor-smoke-active-color: "#D83B01"
   
   # 安防设备状态颜色
   state-alarm_control_panel-armed_home-color: "#CA5010"
   state-alarm_control_panel-armed_away-color: "#D83B01"
+  state-alarm_control_panel-armed_night-color: "#2B579A"
   state-alarm_control_panel-triggered-color: "#A4262C"
   state-camera-recording-color: "#D83B01"
+  state-camera-streaming-color: "#107C10"
   state-lock-locked-color: "#107C10"
   state-lock-unlocked-color: "#D83B01"
+  state-lock-pending-color: "#CA5010"
   
   # 能源监测状态颜色
   state-sensor-power-color: "#CA5010"
+  state-sensor-power-high-color: "#D83B01"
+  state-sensor-power-low-color: "#107C10"
   state-sensor-energy-color: "#881798"
   state-sensor-water-color: "#0078D4"
+  state-sensor-gas-color: "#CA5010"
   state-sensor-solar-color: "#FFB900"
+  state-sensor-battery-charging-color: "#107C10"
   
   # 自动化相关状态颜色
   state-automation-active-color: "#107C10"
+  state-automation-error-color: "#D83B01"
   state-scene-active-color: "#0078D4"
   state-script-active-color: "#2B579A"
+  state-timer-active-color: "#881798"
+  state-schedule-active-color: "#107C10"
   
   # 其他设备状态颜色
   state-fan-active-color: "#0078D4"
+  state-fan-idle-color: "#666666"
   state-vacuum-active-color: "#2B579A"
+  state-vacuum-docked-color: "#107C10"
+  state-vacuum-error-color: "#D83B01"
   state-humidifier-active-color: "#0078D4"
   state-switch-active-color: "#107C10"
-  state-input_boolean-active-color: "#2B579A" 
+  state-input_boolean-active-color: "#2B579A"
+  state-update-active-color: "#0078D4"
+  state-person-home-color: "#107C10"
+  state-person-away-color: "#D83B01"
+  
+  # 图表和统计颜色
+  state-chart-primary-color: "#0078D4"
+  state-chart-secondary-color: "#2B579A"
+  state-chart-accent-color: "#881798"
+  state-chart-neutral-color: "#666666" 

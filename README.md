@@ -1,7 +1,7 @@
 # SYMI Themes
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/custom-components/hacs)
-[![ha_version](https://img.shields.io/badge/Home%20Assistant-2025.1.2-blue.svg)](https://www.home-assistant.io)
+[![ha_version](https://img.shields.io/badge/Home%20Assistant-2023.1.0-blue.svg)](https://www.home-assistant.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Release][releases-shield]][releases]
 [![GitHub Activity][commits-shield]][commits]
@@ -12,6 +12,18 @@
 [commits]: https://github.com/symi-daguo/symi-themes/commits/main
 
 一套为 Home Assistant 设计的现代化主题集合，专注于现代设计趋势。
+
+## 版本兼容性
+
+- 最低支持版本：Home Assistant 2023.1.0
+- 推荐版本：Home Assistant 2023.1.0 及以上
+- 已测试版本：
+  - Core: 2024.12.5
+  - Frontend: 20241127.8
+  - Supervisor: 2024.12.0
+  - Operating System: 14.1
+
+所有主题使用标准的 CSS 变量，具有良好的向前兼容性。新版本的 Home Assistant 会支持更多设备状态的样式定制。
 
 ## 主题预览
 
