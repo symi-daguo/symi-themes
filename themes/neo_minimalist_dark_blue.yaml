@@ -1,42 +1,27 @@
 新极简-深蓝:
-  # 继承基础主题的所有属性
-  primary-color: "rgb(10, 132, 255)"  # iOS深蓝色
-  accent-color: "rgb(94, 92, 230)"    # iOS深紫色
-  
-  # 修改背景图片
-  background-image: "url('/local/ios-themes/homekit-bg-dark-blue.jpg')"
-  
-  # 继承其他属性
+  primary-color: "rgb(10, 132, 255)"
+  accent-color: "rgb(94, 92, 230)"
+  background-image: "url('/local/themes/backgrounds/homekit-bg-dark-blue.jpg')"
   ha-card-border-radius: "12px"
   ha-card-box-shadow: "0 2px 4px 0 rgba(0,0,0,0.16)"
   paper-dialog-margin: "0"
   border-radius: "12px"
-  
-  # 字体设置
   primary-font-family: "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif"
-  
-  # 动画效果
   ha-card-hover-box-shadow: "0 4px 8px 0 rgba(0,0,0,0.16)"
   transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
-  
-  # iOS风格毛玻璃效果
   card-mod-theme: "ios"
   card-mod-card: |
     ha-card {
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
     }
-  
   modes:
     light:
-      # 明亮模式 - iOS Light Mode
       background-color: "rgb(242, 242, 247)"
       primary-background-color: "rgb(242, 242, 247)"
       secondary-background-color: "rgb(255, 255, 255)"
       paper-card-background-color: "rgba(255, 255, 255, 0.8)"
-      
     dark:
-      # 暗黑模式 - iOS Dark Mode
       background-color: "rgb(28, 28, 30)"
       primary-background-color: "rgb(28, 28, 30)"
       secondary-background-color: "rgb(44, 44, 46)"
