@@ -1,27 +1,61 @@
 暗夜红烛:
   # 基础色彩
   primary-color: "#FF453A"
-  accent-color: "#FF375F"
+  accent-color: "#FF6961"
+  light-primary-color: "var(--accent-color)"
+  primary-background-color: "var(--background-color)"
   
   # 背景设置
   background: var(--background-image)
   background-image: url("/local/themes/backgrounds/dark-red.jpg")
-  background-filter: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4))
+  background-filter: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3))
   lovelace-background: var(--background)
+  markdown-code-background-color: var(--primary-background-color)
+  
+  # 通用设置
+  card-background-color: var(--paper-card-background-color)
+  paper-card-background-color: rgba(255, 255, 255, 0.1)
+  paper-dialog-background-color: var(--paper-card-background-color)
+  secondary-background-color: var(--primary-background-color)
+  divider-color: rgba(0, 0, 0, 0.12)
   
   # 卡片样式
   ha-card-border-radius: 12px
   ha-card-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2)
+  paper-dialog-margin: 0
   border-radius: 12px
   
   # 字体设置
   primary-font-family: -apple-system, BlinkMacSystemFont, SF Pro Text, Helvetica Neue, sans-serif
+  paper-font-common-base_-_font-family: var(--primary-font-family)
+  paper-font-common-code_-_font-family: SF Mono, Menlo, Consolas, Monaco, monospace
+  paper-font-body1_-_font-family: var(--primary-font-family)
+  paper-font-subhead_-_font-family: var(--primary-font-family)
+  paper-font-headline_-_font-family: var(--primary-font-family)
+  paper-font-caption_-_font-family: var(--primary-font-family)
+  paper-font-title_-_font-family: var(--primary-font-family)
+  
+  # 字体粗细
+  paper-font-body1_-_font-weight: 400
+  paper-font-subhead_-_font-weight: 500
+  paper-font-headline_-_font-weight: 500
+  paper-font-caption_-_font-weight: 400
+  paper-font-title_-_font-weight: 500
   
   # 动画效果
   ha-card-hover-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3)
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1)
   
+  # 滚动条样式
+  scrollbar-thumb-color: rgba(0, 0, 0, 0.2)
+  scrollbar-track-color: rgba(0, 0, 0, 0.05)
+  
+  # 标签页样式
+  paper-tabs-selection-bar-color: var(--primary-color)
+  paper-tab-ink: var(--primary-color)
+  
   # 毛玻璃效果
+  card-mod-theme: ios
   card-mod-card: |
     ha-card {
       backdrop-filter: blur(15px);
@@ -37,35 +71,96 @@
   # 明暗模式
   modes:
     light:
+      # 明亮模式
       background-color: "#F2F2F7"
       primary-background-color: "#F2F2F7"
       secondary-background-color: "#FFFFFF"
       paper-card-background-color: rgba(255, 255, 255, 0.7)
+      paper-listbox-background-color: var(--paper-card-background-color)
+      
+      # 文本颜色
+      primary-text-color: "#000000"
+      secondary-text-color: "#6B6B6B"
+      text-primary-color: var(--primary-text-color)
+      disabled-text-color: rgba(0, 0, 0, 0.38)
+      
+      # 分割线
       divider-color: rgba(0, 0, 0, 0.05)
-      text-primary-color: "#000000"
-      text-secondary-color: "#6B6B6B"
-      state-icon-color: rgba(0, 0, 0, 0.5)
-      state-icon-active-color: var(--primary-color)
+      
+      # 图标颜色
+      paper-item-icon-color: rgba(0, 0, 0, 0.5)
+      paper-item-icon-active-color: var(--primary-color)
+      
+      # 选中状态
+      paper-item-selected_-_background-color: rgba(255, 69, 58, 0.1)
       
     dark:
+      # 暗黑模式
       background-color: "#1C1C1E"
       primary-background-color: "#1C1C1E"
       secondary-background-color: "#2C2C2E"
       paper-card-background-color: rgba(44, 44, 46, 0.7)
+      paper-listbox-background-color: var(--paper-card-background-color)
+      
+      # 文本颜色
+      primary-text-color: "#FFFFFF"
+      secondary-text-color: "#9B9B9B"
+      text-primary-color: var(--primary-text-color)
+      disabled-text-color: rgba(255, 255, 255, 0.38)
+      
+      # 分割线
       divider-color: rgba(255, 255, 255, 0.05)
-      text-primary-color: "#FFFFFF"
-      text-secondary-color: "#9B9B9B"
-      state-icon-color: rgba(255, 255, 255, 0.5)
-      state-icon-active-color: var(--primary-color)
+      
+      # 图标颜色
+      paper-item-icon-color: rgba(255, 255, 255, 0.5)
+      paper-item-icon-active-color: var(--primary-color)
+      
+      # 选中状态
+      paper-item-selected_-_background-color: rgba(255, 69, 58, 0.1)
 
-  # 状态颜色
+  # 设备状态颜色
+  state-icon-color: var(--paper-item-icon-color)
+  state-icon-active-color: var(--primary-color)
+  state-icon-unavailable-color: var(--disabled-text-color)
+  
+  # 基础设备状态
   state-on-color: var(--primary-color)
   state-off-color: var(--state-icon-color)
   state-home-color: "#30D158"
   state-not_home-color: "#FF453A"
+  state-unavailable-color: var(--disabled-text-color)
+  state-idle-color: var(--state-icon-color)
+  
+  # 灯光状态
+  state-light-on-color: "#FFD60A"
+  state-light-off-color: var(--state-icon-color)
+  
+  # 空调状态
+  state-climate-heat-color: "#FF453A"
+  state-climate-cool-color: "#0A84FF"
+  state-climate-auto-color: "#30D158"
+  
+  # 传感器状态
+  state-sensor-temperature-color: "#FF9500"
+  state-sensor-humidity-color: "#0A84FF"
+  state-sensor-air_quality-color: "#30D158"
+  state-binary_sensor-motion-active-color: "#FF453A"
+  state-binary_sensor-door-active-color: "#5E5CE6"
   
   # 开关样式
   switch-checked-button-color: var(--primary-color)
   switch-unchecked-button-color: var(--state-icon-color)
   switch-checked-track-color: rgba(255, 69, 58, 0.3)
-  switch-unchecked-track-color: rgba(120, 120, 128, 0.2) 
+  switch-unchecked-track-color: rgba(120, 120, 128, 0.2)
+  
+  # 滑块样式
+  paper-slider-knob-color: var(--primary-color)
+  paper-slider-knob-start-color: var(--paper-slider-knob-color)
+  paper-slider-pin-color: var(--primary-color)
+  paper-slider-active-color: var(--primary-color)
+  paper-slider-container-color: rgba(0, 0, 0, 0.15)
+  
+  # 进度条样式
+  paper-progress-active-color: var(--primary-color)
+  paper-progress-secondary-color: var(--light-primary-color)
+  paper-progress-container-color: rgba(0, 0, 0, 0.15) 
