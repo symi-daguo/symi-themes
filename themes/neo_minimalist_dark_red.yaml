@@ -1,28 +1,71 @@
-新极简-深红:
-  primary-color: "rgb(255, 69, 58)"
-  accent-color: "rgb(255, 55, 95)"
-  background-image: "url('/local/themes/backgrounds/homekit-bg-dark-red.jpg')"
-  ha-card-border-radius: "12px"
-  ha-card-box-shadow: "0 2px 4px 0 rgba(0,0,0,0.16)"
-  paper-dialog-margin: "0"
-  border-radius: "12px"
-  primary-font-family: "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif"
-  ha-card-hover-box-shadow: "0 4px 8px 0 rgba(0,0,0,0.16)"
-  transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
-  card-mod-theme: "ios"
+暗夜红烛:
+  # 基础色彩
+  primary-color: "#FF453A"
+  accent-color: "#FF375F"
+  
+  # 背景设置
+  background: var(--background-image)
+  background-image: url("/local/themes/backgrounds/dark-red.jpg")
+  background-filter: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4))
+  lovelace-background: var(--background)
+  
+  # 卡片样式
+  ha-card-border-radius: 12px
+  ha-card-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2)
+  border-radius: 12px
+  
+  # 字体设置
+  primary-font-family: -apple-system, BlinkMacSystemFont, SF Pro Text, Helvetica Neue, sans-serif
+  
+  # 动画效果
+  ha-card-hover-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3)
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1)
+  
+  # 毛玻璃效果
   card-mod-card: |
     ha-card {
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
     }
+    ha-card:hover {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.15);
+    }
+  
+  # 明暗模式
   modes:
     light:
-      background-color: "rgb(242, 242, 247)"
-      primary-background-color: "rgb(242, 242, 247)"
-      secondary-background-color: "rgb(255, 255, 255)"
-      paper-card-background-color: "rgba(255, 255, 255, 0.8)"
+      background-color: "#F2F2F7"
+      primary-background-color: "#F2F2F7"
+      secondary-background-color: "#FFFFFF"
+      paper-card-background-color: rgba(255, 255, 255, 0.7)
+      divider-color: rgba(0, 0, 0, 0.05)
+      text-primary-color: "#000000"
+      text-secondary-color: "#6B6B6B"
+      state-icon-color: rgba(0, 0, 0, 0.5)
+      state-icon-active-color: var(--primary-color)
+      
     dark:
-      background-color: "rgb(28, 28, 30)"
-      primary-background-color: "rgb(28, 28, 30)"
-      secondary-background-color: "rgb(44, 44, 46)"
-      paper-card-background-color: "rgba(44, 44, 46, 0.8)" 
+      background-color: "#1C1C1E"
+      primary-background-color: "#1C1C1E"
+      secondary-background-color: "#2C2C2E"
+      paper-card-background-color: rgba(44, 44, 46, 0.7)
+      divider-color: rgba(255, 255, 255, 0.05)
+      text-primary-color: "#FFFFFF"
+      text-secondary-color: "#9B9B9B"
+      state-icon-color: rgba(255, 255, 255, 0.5)
+      state-icon-active-color: var(--primary-color)
+
+  # 状态颜色
+  state-on-color: var(--primary-color)
+  state-off-color: var(--state-icon-color)
+  state-home-color: "#30D158"
+  state-not_home-color: "#FF453A"
+  
+  # 开关样式
+  switch-checked-button-color: var(--primary-color)
+  switch-unchecked-button-color: var(--state-icon-color)
+  switch-checked-track-color: rgba(255, 69, 58, 0.3)
+  switch-unchecked-track-color: rgba(120, 120, 128, 0.2) 
