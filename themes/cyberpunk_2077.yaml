@@ -1,57 +1,78 @@
 赛博朋克2077:
   # 基础色彩
-  primary-color: "#F9E900"  # 赛博朋克标志性黄色
-  accent-color: "#00FFD1"   # 科技青色
+  primary-color: "#F9E900"
+  accent-color: "#00FFD1"
+  
+  # 背景设置
+  background-image: "url('https://raw.githubusercontent.com/symi-daguo/symi-themes/main/themes/backgrounds/cyberpunk-bg.jpg')"
+  background-filter: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))"
   
   # 通用设置
-  card-background-color: "rgba(35, 35, 45, 0.85)"
-  paper-card-background-color: "rgba(35, 35, 45, 0.85)"
-  paper-dialog-background-color: "rgba(35, 35, 45, 0.85)"
+  card-background-color: "rgba(23, 24, 35, 0.85)"
+  paper-card-background-color: "var(--card-background-color)"
+  paper-dialog-background-color: "var(--card-background-color)"
+  paper-item-icon-color: "var(--primary-color)"
+  paper-item-icon-active-color: "var(--accent-color)"
   
   # 卡片样式
-  ha-card-border-radius: "2px"
-  ha-card-box-shadow: "0 0 10px rgba(249, 233, 0, 0.3)"
+  ha-card-border-radius: "12px"
+  ha-card-box-shadow: "0 2px 4px 0 rgba(0,0,0,0.16)"
+  ha-card-background: "var(--card-background-color)"
   
   # 字体设置
-  primary-font-family: "'Rajdhani', 'Blender Pro', sans-serif"
-  paper-font-common-base_-_font-family: "'Rajdhani', 'Blender Pro', sans-serif"
-  paper-font-common-code_-_font-family: "'Share Tech Mono', monospace"
+  primary-font-family: "'Rajdhani', 'Blender Pro', system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
+  paper-font-common-base_-_font-family: "var(--primary-font-family)"
+  paper-font-common-code_-_font-family: "'Share Tech Mono', 'SF Mono', monospace"
   
   # 动画效果
-  ha-card-border-radius: "2px"
-  ha-card-box-shadow: "0 0 10px rgba(249, 233, 0, 0.3)"
-  ha-card-hover-box-shadow: "0 0 20px rgba(0, 255, 209, 0.5)"
-  transition-duration: "0.2s"
-  transition-timing-function: "cubic-bezier(0.4, 0, 0.2, 1)"
+  ha-card-hover-box-shadow: "0 0 20px rgba(249, 233, 0, 0.3)"
+  transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
   
-  # 故障艺术效果
-  --glitch-effect: "true"
-  --card-glitch-effect: "rgba(249, 233, 0, 0.1)"
+  # 滚动条样式
+  scrollbar-thumb-color: "rgba(249, 233, 0, 0.2)"
+  scrollbar-track-color: "rgba(0, 0, 0, 0.05)"
   
   modes:
     light:
       # 明亮模式
-      background-color: "#1F1F2F"
-      secondary-background-color: "#2A2A3A"
+      background-color: "#1A1B2E"
+      secondary-background-color: "#252942"
       primary-text-color: "#F9E900"
       secondary-text-color: "#00FFD1"
-      divider-color: "rgba(249, 233, 0, 0.2)"
+      text-primary-color: "var(--primary-text-color)"
       disabled-text-color: "rgba(255, 255, 255, 0.5)"
-      paper-item-icon-color: "#F9E900"
-      paper-item-selected_-_background-color: "rgba(249, 233, 0, 0.15)"
+      divider-color: "rgba(249, 233, 0, 0.12)"
+      paper-listbox-background-color: "var(--card-background-color)"
+      paper-item-icon_-_color: "var(--primary-color)"
+      paper-item-selected_-_background-color: "rgba(249, 233, 0, 0.12)"
+      switch-checked-button-color: "var(--accent-color)"
+      switch-checked-track-color: "rgba(0, 255, 209, 0.3)"
+      switch-unchecked-button-color: "#636363"
+      switch-unchecked-track-color: "rgba(99, 99, 99, 0.3)"
       
     dark:
       # 暗黑模式
-      background-color: "#0F0F1F"
-      secondary-background-color: "#1A1A2A"
+      background-color: "#0A0B1E"
+      secondary-background-color: "#151832"
       primary-text-color: "#F9E900"
       secondary-text-color: "#00FFD1"
-      divider-color: "rgba(249, 233, 0, 0.2)"
+      text-primary-color: "var(--primary-text-color)"
       disabled-text-color: "rgba(255, 255, 255, 0.5)"
-      paper-item-icon-color: "#F9E900"
-      paper-item-selected_-_background-color: "rgba(249, 233, 0, 0.15)"
+      divider-color: "rgba(249, 233, 0, 0.12)"
+      paper-listbox-background-color: "var(--card-background-color)"
+      paper-item-icon_-_color: "var(--primary-color)"
+      paper-item-selected_-_background-color: "rgba(249, 233, 0, 0.12)"
+      switch-checked-button-color: "var(--accent-color)"
+      switch-checked-track-color: "rgba(0, 255, 209, 0.3)"
+      switch-unchecked-button-color: "#636363"
+      switch-unchecked-track-color: "rgba(99, 99, 99, 0.3)"
   
-  # 基础设备状态颜色
+  # 设备状态颜色
+  state-icon-color: "var(--primary-color)"
+  state-icon-active-color: "var(--accent-color)"
+  state-icon-unavailable-color: "var(--disabled-text-color)"
+  
+  # 基础设备状态
   state-light-on-color: "#F9E900"
   state-light-off-color: "#4D4D4D"
   state-climate-heat-color: "#FF003C"
@@ -62,62 +83,60 @@
   state-media_player-active-color: "#FF003C"
   state-media_player-idle-color: "#4D4D4D"
   
-  # 传感器状态颜色
+  # 传感器状态
   state-sensor-temperature-color: "#FF003C"
   state-sensor-humidity-color: "#00FFD1"
   state-sensor-air_quality-color: "#00FFD1"
-  state-sensor-battery-color: "#F9E900"
-  state-sensor-battery-low-color: "#FF003C"
   state-binary_sensor-motion-active-color: "#FF003C"
   state-binary_sensor-door-active-color: "#00FFD1"
-  state-binary_sensor-window-active-color: "#00FFD1"
-  state-binary_sensor-presence-active-color: "#F9E900"
-  state-binary_sensor-smoke-active-color: "#FF003C"
   
-  # 安防设备状态颜色
+  # 安防设备状态
   state-alarm_control_panel-armed_home-color: "#F9E900"
   state-alarm_control_panel-armed_away-color: "#FF003C"
-  state-alarm_control_panel-armed_night-color: "#00FFD1"
   state-alarm_control_panel-triggered-color: "#FF003C"
   state-camera-recording-color: "#FF003C"
-  state-camera-streaming-color: "#00FFD1"
   state-lock-locked-color: "#00FFD1"
   state-lock-unlocked-color: "#FF003C"
-  state-lock-pending-color: "#F9E900"
   
-  # 能源监测状态颜色
+  # 能源监测状态
   state-sensor-power-color: "#F9E900"
-  state-sensor-power-high-color: "#FF003C"
-  state-sensor-power-low-color: "#00FFD1"
   state-sensor-energy-color: "#00FFD1"
-  state-sensor-water-color: "#00FFD1"
-  state-sensor-gas-color: "#FF003C"
-  state-sensor-solar-color: "#F9E900"
   state-sensor-battery-charging-color: "#00FFD1"
   
-  # 自动化相关状态颜色
+  # 自动化相关状态
   state-automation-active-color: "#00FFD1"
-  state-automation-error-color: "#FF003C"
   state-scene-active-color: "#F9E900"
   state-script-active-color: "#00FFD1"
-  state-timer-active-color: "#FF003C"
-  state-schedule-active-color: "#00FFD1"
   
-  # 其他设备状态颜色
+  # 其他设备状态
   state-fan-active-color: "#00FFD1"
-  state-fan-idle-color: "#4D4D4D"
   state-vacuum-active-color: "#00FFD1"
-  state-vacuum-docked-color: "#F9E900"
-  state-vacuum-error-color: "#FF003C"
   state-humidifier-active-color: "#00FFD1"
   state-switch-active-color: "#F9E900"
-  state-input_boolean-active-color: "#00FFD1"
-  state-update-active-color: "#F9E900"
-  state-person-home-color: "#00FFD1"
-  state-person-away-color: "#FF003C"
   
-  # 图表和统计颜色
+  # 图表和统计
   state-chart-primary-color: "#F9E900"
   state-chart-secondary-color: "#00FFD1"
   state-chart-accent-color: "#FF003C"
-  state-chart-neutral-color: "#4D4D4D" 
+  
+  # Material Design 组件样式
+  paper-slider-knob-color: "var(--accent-color)"
+  paper-slider-knob-start-color: "var(--paper-slider-knob-color)"
+  paper-slider-pin-color: "var(--accent-color)"
+  paper-slider-active-color: "var(--accent-color)"
+  paper-slider-container-color: "rgba(255, 255, 255, 0.1)"
+  
+  paper-progress-active-color: "var(--accent-color)"
+  paper-progress-secondary-color: "var(--accent-color)"
+  paper-progress-container-color: "rgba(255, 255, 255, 0.1)"
+  
+  table-row-background-color: "var(--card-background-color)"
+  table-row-alternative-background-color: "var(--secondary-background-color)"
+  
+  paper-toggle-button-checked-ink-color: "var(--accent-color)"
+  paper-toggle-button-checked-button-color: "var(--accent-color)"
+  paper-toggle-button-checked-bar-color: "var(--accent-color)"
+  
+  # 特殊效果
+  sidebar-selected-icon-color: "var(--accent-color)"
+  sidebar-selected-text-color: "var(--accent-color)" 

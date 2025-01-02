@@ -1,0 +1,10 @@
+新极简-浅绿:
+  # 继承基础主题
+  !include themes/neo_minimalist.yaml
+  
+  # 修改背景图片
+  background-image: "url('/local/ios-themes/homekit-bg-light-green.jpg')"
+  
+  # 修改主色调
+  primary-color: "rgb(48, 209, 88)"    # iOS浅绿色
+  accent-color: "rgb(52, 199, 89)"     # iOS绿色 

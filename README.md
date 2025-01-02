@@ -1,170 +1,124 @@
 # SYMI Themes
 
-[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/custom-components/hacs)
-[![ha_version](https://img.shields.io/badge/Home%20Assistant-2023.1.0-blue.svg)](https://www.home-assistant.io)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub Release][releases-shield]][releases]
-[![GitHub Activity][commits-shield]][commits]
+Home Assistant 的现代主题集合
 
-[releases-shield]: https://img.shields.io/github/release/symi-daguo/symi-themes.svg
-[releases]: https://github.com/symi-daguo/symi-themes/releases
-[commits-shield]: https://img.shields.io/github/commit-activity/y/symi-daguo/symi-themes.svg
-[commits]: https://github.com/symi-daguo/symi-themes/commits/main
+## 主题列表
 
-一套为 Home Assistant 设计的现代化主题集合，专注于现代设计趋势。
+1. 新极简
+   - 基础主题：iOS风格的简约设计
+   - 深蓝色变体：采用 iOS 深蓝色调，搭配深色背景
+   - 浅绿色变体：清新的浅绿色调，搭配明亮背景
+   - 深红色变体：热情的深红色调，搭配暗色背景
+2. 智能办公：专为办公环境优化的主题
+3. 自然科技：结合自然元素和科技感的主题
+4. 水晶透明：通透清晰的玻璃拟态设计
+5. 赛博霓虹：充满未来感的霓虹风格
+6. 赛博朋克2077：赛博朋克风格主题
 
-## 版本兼容性
+## 特点
 
-- 最低支持版本：Home Assistant 2023.1.0
-- 推荐版本：Home Assistant 2023.1.0 及以上
-- 已测试版本：
-  - Core: 2024.12.5
-  - Frontend: 20241127.8
-  - Supervisor: 2024.12.0
-  - Operating System: 14.1
+- 基于 iOS 设计语言，提供统一的视觉体验
+- 完整支持浅色/深色模式自动切换
+- 丰富的动画效果和过渡
+- 优化的设备状态显示和控制界面
+- 多种主题变体，满足不同场景需求
+- 精心设计的卡片布局和间距
+- 优化的移动端显示效果
+- 自适应的字体大小和颜色对比度
 
-所有主题使用标准的 CSS 变量，具有良好的向前兼容性。新版本的 Home Assistant 会支持更多设备状态的样式定制。
+## 安装
 
-## 主题预览
+### HACS (推荐)
 
-### 1. 新极简
-- 特点：极简设计，大量留白，高对比度
-- 适用场景：追求简约清爽的用户
-- 支持：亮色/暗色模式
-- 风格：类似iOS/MacOS设计语言
-- 主色调：蓝色系 (#007AFF)
-
-### 2. 赛博霓虹
-- 特点：霓虹色彩，玻璃拟态设计
-- 适用场景：科技感强烈的智能家居
-- 支持：亮色/暗色模式
-- 风格：赛博朋克2077风格
-- 主色调：霓虹蓝 (#00F3FF) + 霓虹粉 (#FF00E5)
-
-### 3. 自然科技
-- 特点：自然色彩搭配，生态友好
-- 适用场景：智能家居中的环保监测
-- 支持：亮色/暗色模式
-- 风格：生态环保+科技感
-- 主色调：自然绿 (#4CAF50)
-
-### 4. 水晶透明
-- 特点：全透明设计，毛玻璃效果
-- 适用场景：喜欢清透风格的用户
-- 支持：亮色/暗色模式
-- 风格：Windows 11风格
-- 主色调：透明蓝 (rgba(0, 120, 212, 0.9))
-
-### 5. 智能办公
-- 特点：专业商务风格，高效清晰
-- 适用场景：办公环境的智能控制
-- 支持：亮色/暗色模式
-- 风格：类似Microsoft 365设计语言
-- 主色调：商务蓝 (#0078D4)
-
-### 6. 赛博朋克2077
-- 特点：故障艺术效果，强烈的视觉冲击
-- 适用场景：科幻风格的智能家居
-- 支持：亮色/暗色模式
-- 风格：赛博朋克2077游戏风格
-- 主色调：霓虹黄 (#F9E900) + 科技青 (#00FFD1) + 警告红 (#FF003C)
-- 特殊效果：故障艺术、发光边框
-
-## 设备支持列表
-
-### 基础设备
-- 灯光控制 (Light)
-- 空调/温控 (Climate)
-- 窗帘/门 (Cover)
-- 媒体播放器 (Media Player)
-
-### 传感器设备
-- 温度传感器 (Temperature Sensor)
-- 湿度传感器 (Humidity Sensor)
-- 空气质量传感器 (Air Quality Sensor)
-- 运动传感器 (Motion Sensor)
-- 门窗传感器 (Door Sensor)
-
-### 安防设备
-- 警报器 (Alarm Control Panel)
-  - 在家警戒
-  - 离家警戒
-  - 触发状态
-- 摄像头 (Camera)
-- 门锁 (Lock)
-
-### 能源监测
-- 电量监测 (Power Sensor)
-- 能源消耗 (Energy Sensor)
-- 用水监测 (Water Sensor)
-- 太阳能系统 (Solar Sensor)
-
-### 自动化设备
-- 自动化 (Automation)
-- 场景 (Scene)
-- 脚本 (Script)
-
-### 其他设备
-- 风扇 (Fan)
-- 扫地机器人 (Vacuum)
-- 加湿器 (Humidifier)
-- 开关 (Switch)
-- 布尔输入 (Input Boolean)
-
-## 安装方法
-
-### HACS 安装（推荐）
-1. 确保已安装 HACS
-2. 在 HACS 中添加自定义仓库：
-   - 仓库地址：`https://github.com/symi-daguo/symi-themes`
-   - 类别选择：Themes
-3. 在 HACS 的 Themes 分类中找到 "SYMI Themes"
-4. 点击下载
-5. 重启 Home Assistant
+1. 打开 HACS
+2. 点击集成
+3. 点击右上角的 ⋮ 按钮
+4. 选择自定义存储库
+5. 输入 https://github.com/symi-daguo/symi-themes
+6. 选择类别为 Theme
+7. 点击添加
+8. 点击安装
 
 ### 手动安装
-1. 下载主题文件
-2. 将 `themes` 文件夹复制到 Home Assistant 配置目录
-3. 在 `configuration.yaml` 中添加：
+
+1. 下载此仓库
+2. 将 `themes` 文件夹复制到您的 Home Assistant 配置目录
+3. 在 `configuration.yaml` 中添加:
+
 ```yaml
 frontend:
   themes: !include_dir_merge_named themes
 ```
+
 4. 重启 Home Assistant
 
-## 主题特性
+## 使用
 
-### 通用功能
-- 支持明暗模式自动切换
-- 适配所有 Home Assistant 标准卡片
-- 针对不同设备状态优化显示效果
-- 支持主流浏览器
-- 响应式设计
+1. 打开 Home Assistant
+2. 点击您的用户头像
+3. 选择主题
+4. 从下拉菜单中选择您喜欢的主题
 
-### 设备状态显示优化
-每个主题都针对不同类型的设备状态进行了专门的颜色优化，确保：
-- 状态一目了然
-- 色彩协调统一
-- 符合直觉的颜色映射
-- 清晰的状态区分
+### 自动切换
 
-## 更新日志
+您可以设置在特定时间自动切换主题，例如：
 
-### v1.0.0 (2025-01-02)
-- 首次发布
-- 包含5个主题
-- 支持明暗模式
-- 优化移动端显示
-- 全面支持各类设备状态显示
+```yaml
+automation:
+  - alias: '日间主题'
+    trigger:
+      platform: sun
+      event: sunrise
+    action:
+      service: frontend.set_theme
+      data:
+        name: 新极简-浅绿
 
-## 贡献指南
+  - alias: '夜间主题'
+    trigger:
+      platform: sun
+      event: sunset
+    action:
+      service: frontend.set_theme
+      data:
+        name: 新极简-深蓝
+```
 
-欢迎提交 Issue 和 Pull Request 来帮助改进主题。
+## 自定义
 
-## 许可证
+每个主题都支持自定义，您可以通过修改对应的 YAML 文件来：
+
+- 调整颜色方案
+- 更换背景图片
+- 修改动画效果
+- 调整布局参数
+
+## 贡献
+
+我们欢迎各种形式的贡献：
+
+- 提交 Bug 报告
+- 提出新功能建议
+- 提交代码改进
+- 分享主题定制方案
+
+## 许可
 
 MIT License
 
-## 支持
+## 更新日志
 
-如果遇到问题，请在 [GitHub Issues](https://github.com/symi-daguo/symi-themes/issues) 中提出。 
+### v1.2.0
+- 新增新极简主题的三个变体：深蓝、浅绿、深红
+- 优化主题切换动画
+- 改进移动端适配
+
+### v1.1.0
+- 新增智能办公主题
+- 优化深色模式显示效果
+- 修复已知问题
+
+### v1.0.0
+- 首次发布
+- 支持6种基础主题
+- 实现浅色/深色模式 

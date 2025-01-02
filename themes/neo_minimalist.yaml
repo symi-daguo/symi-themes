@@ -1,65 +1,281 @@
 新极简:
-  # 基础色彩
-  primary-color: "#007AFF"
-  accent-color: "#5856D6"
+  # 基础色彩 - 采用iOS原生配色
+  primary-color: "rgb(0, 122, 255)"
+  accent-color: "rgb(88, 86, 214)"
+  light-primary-color: "var(--accent-color)"
+  primary-background-color: "var(--background-color)"
+  
+  # 背景设置
+  background: "var(--background-image)"
+  background-image: "url('/local/ios-themes/homekit-bg-light-blue.jpg')"
+  background-color: "var(--primary-background-color)"
+  lovelace-background: "var(--background)"
+  markdown-code-background-color: "var(--primary-background-color)"
   
   # 通用设置
-  card-background-color: "rgba(255, 255, 255, 0.98)"
-  paper-card-background-color: "rgba(255, 255, 255, 0.98)"
+  card-background-color: "var(--paper-card-background-color)"
+  paper-card-background-color: "rgba(255, 255, 255, 0.8)"
+  paper-dialog-background-color: "var(--paper-card-background-color)"
+  secondary-background-color: "var(--primary-background-color)"
+  divider-color: "rgba(0, 0, 0, 0.12)"
+  
+  # 卡片样式
+  ha-card-border-radius: "12px"
+  ha-card-box-shadow: "0 2px 4px 0 rgba(0,0,0,0.16)"
+  paper-dialog-margin: "0"
+  border-radius: "12px"
+  
+  # 字体设置
+  primary-font-family: "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif"
+  paper-font-common-base_-_font-family: "var(--primary-font-family)"
+  paper-font-common-code_-_font-family: "'SF Mono', Menlo, Consolas, Monaco, monospace"
+  paper-font-body1_-_font-family: "var(--primary-font-family)"
+  paper-font-subhead_-_font-family: "var(--primary-font-family)"
+  paper-font-headline_-_font-family: "var(--primary-font-family)"
+  paper-font-caption_-_font-family: "var(--primary-font-family)"
+  paper-font-title_-_font-family: "var(--primary-font-family)"
+  
+  # 字体粗细
+  paper-font-body1_-_font-weight: "400"
+  paper-font-subhead_-_font-weight: "500"
+  paper-font-headline_-_font-weight: "500"
+  paper-font-caption_-_font-weight: "400"
+  paper-font-title_-_font-weight: "500"
+  
+  # 动画效果
+  ha-card-hover-box-shadow: "0 4px 8px 0 rgba(0,0,0,0.16)"
+  transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)"
+  
+  # 滚动条样式
+  scrollbar-thumb-color: "rgba(0, 0, 0, 0.2)"
+  scrollbar-track-color: "rgba(0, 0, 0, 0.05)"
+  
+  # 标签页样式
+  paper-tabs-selection-bar-color: "var(--primary-color)"
+  paper-tab-ink: "var(--primary-color)"
+  
+  # iOS风格毛玻璃效果
+  card-mod-theme: "ios"
+  card-mod-card: |
+    ha-card {
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
   
   modes:
     light:
-      # 明亮模式
-      background-color: "#FAFAFA"
-      secondary-background-color: "#FFFFFF"
-      primary-text-color: "#000000"
-      secondary-text-color: "#666666"
-      divider-color: "rgba(0, 0, 0, 0.08)"
+      # 明亮模式 - iOS Light Mode
+      background-color: "rgb(242, 242, 247)"
+      primary-background-color: "rgb(242, 242, 247)"
+      secondary-background-color: "rgb(255, 255, 255)"
+      paper-card-background-color: "rgba(255, 255, 255, 0.8)"
+      paper-listbox-background-color: "var(--paper-card-background-color)"
+      
+      # 文本颜色
+      primary-text-color: "rgb(0, 0, 0)"
+      secondary-text-color: "rgb(142, 142, 147)"
+      text-primary-color: "var(--primary-text-color)"
+      disabled-text-color: "rgba(0, 0, 0, 0.38)"
+      
+      # 分割线
+      divider-color: "rgba(0, 0, 0, 0.12)"
+      
+      # 图标颜色
+      paper-item-icon-color: "rgb(142, 142, 147)"
+      paper-item-icon-active-color: "var(--primary-color)"
+      
+      # 选中状态
+      paper-item-selected_-_background-color: "rgba(0, 122, 255, 0.1)"
+      
+      # 开关样式
+      switch-checked-button-color: "var(--primary-color)"
+      switch-checked-track-color: "rgba(0, 122, 255, 0.5)"
+      switch-unchecked-button-color: "rgb(229, 229, 234)"
+      switch-unchecked-track-color: "rgb(209, 209, 214)"
+      
+      # 标签页
+      paper-tab-ink: "var(--primary-color)"
+      
+      # 阴影
+      ha-card-box-shadow: "0 2px 4px 0 rgba(0,0,0,0.16)"
+      
+      # iOS风格毛玻璃效果
+      card-mod-card: |
+        ha-card {
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          background-color: rgba(255, 255, 255, 0.8);
+        }
       
     dark:
-      # 暗黑模式
-      background-color: "#000000"
-      secondary-background-color: "#1C1C1E"
-      primary-text-color: "#FFFFFF"
-      secondary-text-color: "#999999"
-      divider-color: "rgba(255, 255, 255, 0.08)"
+      # 暗黑模式 - iOS Dark Mode
+      background-color: "rgb(28, 28, 30)"
+      primary-background-color: "rgb(28, 28, 30)"
+      secondary-background-color: "rgb(44, 44, 46)"
+      paper-card-background-color: "rgba(44, 44, 46, 0.8)"
+      paper-listbox-background-color: "var(--paper-card-background-color)"
+      
+      # 文本颜色
+      primary-text-color: "rgb(255, 255, 255)"
+      secondary-text-color: "rgb(142, 142, 147)"
+      text-primary-color: "var(--primary-text-color)"
+      disabled-text-color: "rgba(255, 255, 255, 0.38)"
+      
+      # 分割线
+      divider-color: "rgba(255, 255, 255, 0.12)"
+      
+      # 图标颜色
+      paper-item-icon-color: "rgb(142, 142, 147)"
+      paper-item-icon-active-color: "var(--primary-color)"
+      
+      # 选中状态
+      paper-item-selected_-_background-color: "rgba(0, 122, 255, 0.1)"
+      
+      # 开关样式
+      switch-checked-button-color: "var(--primary-color)"
+      switch-checked-track-color: "rgba(0, 122, 255, 0.5)"
+      switch-unchecked-button-color: "rgb(99, 99, 102)"
+      switch-unchecked-track-color: "rgb(58, 58, 60)"
+      
+      # 标签页
+      paper-tab-ink: "var(--primary-color)"
+      
+      # 阴影
+      ha-card-box-shadow: "0 2px 4px 0 rgba(0,0,0,0.4)"
+      
+      # iOS风格毛玻璃效果
+      card-mod-card: |
+        ha-card {
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          background-color: rgba(44, 44, 46, 0.8);
+        }
   
-  # 基础设备状态颜色
-  state-light-on-color: "#FFD700"
-  state-climate-heat-color: "#FF6B6B"
-  state-climate-cool-color: "#4FACFE"
-  state-cover-open-color: "#4CAF50"
-  state-media_player-active-color: "#E91E63"
+  # 设备状态颜色 - iOS系统色
+  state-icon-color: "rgb(142, 142, 147)"
+  state-icon-active-color: "var(--primary-color)"
+  state-icon-unavailable-color: "var(--disabled-text-color)"
   
-  # 传感器状态颜色
-  state-sensor-temperature-color: "#FF9500"
-  state-sensor-humidity-color: "#32ADE6"
-  state-sensor-air_quality-color: "#4CD964"
-  state-binary_sensor-motion-active-color: "#FF3B30"
-  state-binary_sensor-door-active-color: "#5856D6"
+  # 基础设备状态
+  state-on-color: "rgb(0, 122, 255)"  # 蓝色
+  state-off-color: "var(--state-icon-color)"
+  state-home-color: "rgb(48, 209, 88)"  # 绿色
+  state-not_home-color: "rgb(255, 69, 58)"  # 红色
+  state-unavailable-color: "var(--disabled-text-color)"
+  state-idle-color: "var(--state-icon-color)"
   
-  # 安防设备状态颜色
-  state-alarm_control_panel-armed_home-color: "#FF9500"
-  state-alarm_control_panel-armed_away-color: "#FF3B30"
-  state-alarm_control_panel-triggered-color: "#FF2D55"
-  state-camera-recording-color: "#FF3B30"
-  state-lock-locked-color: "#4CD964"
-  state-lock-unlocked-color: "#FF3B30"
+  # 灯光状态
+  state-light-on-color: "rgb(255, 214, 10)"  # 黄色
+  state-light-off-color: "var(--state-icon-color)"
   
-  # 能源监测状态颜色
-  state-sensor-power-color: "#FF9500"
-  state-sensor-energy-color: "#5856D6"
-  state-sensor-water-color: "#32ADE6"
-  state-sensor-solar-color: "#FFD60A"
+  # 空调状态
+  state-climate-heat-color: "rgb(255, 69, 58)"  # 红色
+  state-climate-cool-color: "rgb(48, 209, 88)"  # 绿色
+  state-climate-auto-color: "rgb(0, 122, 255)"  # 蓝色
+  state-climate-dry-color: "rgb(255, 159, 10)"  # 橙色
+  state-climate-fan_only-color: "rgb(88, 86, 214)"  # 紫色
   
-  # 自动化相关状态颜色
-  state-automation-active-color: "#4CD964"
-  state-scene-active-color: "#5856D6"
-  state-script-active-color: "#007AFF"
+  # 门窗状态
+  state-cover-open-color: "rgb(48, 209, 88)"    # 绿色
+  state-cover-opening-color: "rgb(255, 159, 10)" # 橙色
+  state-cover-closing-color: "rgb(255, 159, 10)" # 橙色
+  state-cover-closed-color: "var(--state-icon-color)"
   
-  # 其他设备状态颜色
-  state-fan-active-color: "#32ADE6"
-  state-vacuum-active-color: "#5856D6"
-  state-humidifier-active-color: "#32ADE6"
-  state-switch-active-color: "#4CD964"
-  state-input_boolean-active-color: "#007AFF" 
+  # 媒体播放器
+  state-media_player-active-color: "rgb(255, 45, 85)" # 粉色
+  state-media_player-idle-color: "var(--state-icon-color)"
+  state-media_player-standby-color: "var(--state-icon-color)"
+  state-media_player-paused-color: "rgb(255, 159, 10)" # 橙色
+  
+  # 传感器状态
+  state-sensor-temperature-color: "rgb(255, 69, 58)"  # 红色
+  state-sensor-humidity-color: "rgb(0, 122, 255)"     # 蓝色
+  state-sensor-air_quality-color: "rgb(48, 209, 88)"  # 绿色
+  state-binary_sensor-motion-active-color: "rgb(255, 69, 58)" # 红色
+  state-binary_sensor-door-active-color: "rgb(0, 122, 255)"   # 蓝色
+  state-binary_sensor-window-active-color: "rgb(0, 122, 255)" # 蓝色
+  state-binary_sensor-presence-active-color: "rgb(48, 209, 88)" # 绿色
+  state-binary_sensor-smoke-active-color: "rgb(255, 69, 58)"  # 红色
+  
+  # 安防设备状态
+  state-alarm_control_panel-armed_home-color: "rgb(255, 159, 10)" # 橙色
+  state-alarm_control_panel-armed_away-color: "rgb(255, 69, 58)"  # 红色
+  state-alarm_control_panel-armed_night-color: "rgb(88, 86, 214)" # 紫色
+  state-alarm_control_panel-triggered-color: "rgb(255, 69, 58)"   # 红色
+  state-camera-recording-color: "rgb(255, 45, 85)"  # 粉色
+  state-camera-streaming-color: "rgb(48, 209, 88)"  # 绿色
+  state-lock-locked-color: "rgb(48, 209, 88)"       # 绿色
+  state-lock-unlocked-color: "rgb(255, 69, 58)"     # 红色
+  state-lock-pending-color: "rgb(255, 159, 10)"     # 橙色
+  
+  # 能源监测状态
+  state-sensor-power-color: "rgb(255, 159, 10)"     # 橙色
+  state-sensor-power-high-color: "rgb(255, 69, 58)" # 红色
+  state-sensor-power-low-color: "rgb(48, 209, 88)"  # 绿色
+  state-sensor-energy-color: "rgb(88, 86, 214)"     # 紫色
+  state-sensor-water-color: "rgb(0, 122, 255)"      # 蓝色
+  state-sensor-gas-color: "rgb(255, 159, 10)"       # 橙色
+  state-sensor-solar-color: "rgb(255, 214, 10)"     # 黄色
+  state-sensor-battery-charging-color: "rgb(48, 209, 88)" # 绿色
+  state-sensor-battery-low-color: "rgb(255, 69, 58)" # 红色
+  
+  # 自动化相关状态
+  state-automation-active-color: "rgb(48, 209, 88)"  # 绿色
+  state-automation-error-color: "rgb(255, 69, 58)"   # 红色
+  state-scene-active-color: "rgb(88, 86, 214)"       # 紫色
+  state-script-active-color: "rgb(0, 122, 255)"      # 蓝色
+  state-timer-active-color: "rgb(255, 45, 85)"       # 粉色
+  state-schedule-active-color: "rgb(48, 209, 88)"    # 绿色
+  
+  # 其他设备状态
+  state-fan-active-color: "rgb(0, 122, 255)"        # 蓝色
+  state-fan-idle-color: "var(--state-icon-color)"
+  state-vacuum-active-color: "rgb(88, 86, 214)"     # 紫色
+  state-vacuum-docked-color: "rgb(48, 209, 88)"     # 绿色
+  state-vacuum-error-color: "rgb(255, 69, 58)"      # 红色
+  state-humidifier-active-color: "rgb(0, 122, 255)" # 蓝色
+  state-switch-active-color: "rgb(48, 209, 88)"     # 绿色
+  state-input_boolean-active-color: "rgb(0, 122, 255)" # 蓝色
+  state-update-active-color: "rgb(0, 122, 255)"     # 蓝色
+  state-person-home-color: "rgb(48, 209, 88)"       # 绿色
+  state-person-away-color: "rgb(255, 69, 58)"       # 红色
+  
+  # Material Design 组件样式
+  paper-slider-knob-color: "var(--primary-color)"
+  paper-slider-knob-start-color: "var(--paper-slider-knob-color)"
+  paper-slider-pin-color: "var(--primary-color)"
+  paper-slider-active-color: "var(--primary-color)"
+  paper-slider-container-color: "rgba(0, 0, 0, 0.15)"
+  paper-slider-secondary-color: "var(--light-primary-color)"
+  paper-slider-disabled-active-color: "var(--disabled-text-color)"
+  paper-slider-disabled-secondary-color: "var(--disabled-text-color)"
+  
+  paper-progress-active-color: "var(--primary-color)"
+  paper-progress-secondary-color: "var(--light-primary-color)"
+  paper-progress-disabled-line-color: "var(--disabled-text-color)"
+  paper-progress-container-color: "rgba(0, 0, 0, 0.15)"
+  
+  # 表格样式
+  table-row-background-color: "var(--paper-card-background-color)"
+  table-row-alternative-background-color: "var(--primary-background-color)"
+  data-table-background-color: "var(--paper-card-background-color)"
+  
+  # 开关样式
+  paper-toggle-button-checked-ink-color: "var(--primary-color)"
+  paper-toggle-button-checked-button-color: "var(--primary-color)"
+  paper-toggle-button-checked-bar-color: "var(--primary-color)"
+  paper-toggle-button-unchecked-ink-color: "var(--disabled-text-color)"
+  paper-toggle-button-unchecked-button-color: "var(--disabled-text-color)"
+  paper-toggle-button-unchecked-bar-color: "var(--disabled-text-color)"
+  
+  # 特殊效果
+  sidebar-selected-icon-color: "var(--primary-color)"
+  sidebar-selected-text-color: "var(--primary-color)"
+  sidebar-icon-color: "rgb(169, 169, 169)"
+  sidebar-text-color: "var(--primary-text-color)"
+  
+  # 卡片标题
+  ha-card-header-color: "var(--primary-text-color)"
+  ha-card-header-font-size: "16px"
+  ha-card-header-font-weight: "500"
+  ha-card-header-margin: "12px" 

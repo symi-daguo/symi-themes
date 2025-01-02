@@ -1,0 +1,10 @@
+新极简-深红:
+  # 继承基础主题
+  !include themes/neo_minimalist.yaml
+  
+  # 修改背景图片
+  background-image: "url('/local/ios-themes/homekit-bg-dark-red.jpg')"
+  
+  # 修改主色调
+  primary-color: "rgb(255, 69, 58)"    # iOS深红色
+  accent-color: "rgb(255, 55, 95)"     # iOS粉红色 
