@@ -1,0 +1,7 @@
+{
+  "name": "HA Themes 2025",
+  "render_readme": true,
+  "filename": "themes",
+  "hide_default_branch": true,
+  "homeassistant": "2024.1.0"
+} 

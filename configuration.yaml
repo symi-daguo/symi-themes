@@ -1,0 +1,6 @@
+frontend:
+  themes: !include themes.yaml
+
+homeassistant:
+  frontend:
+    themes: !include themes.yaml 

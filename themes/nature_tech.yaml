@@ -1,0 +1,65 @@
+nature_tech:
+  # 基础色彩
+  primary-color: "#4CAF50"
+  accent-color: "#009688"
+  
+  # 通用设置
+  card-background-color: "rgba(255, 255, 255, 0.95)"
+  paper-card-background-color: "rgba(255, 255, 255, 0.95)"
+  
+  modes:
+    light:
+      # 明亮模式
+      background-color: "#F1F8E9"
+      secondary-background-color: "#FFFFFF"
+      primary-text-color: "#2E7D32"
+      secondary-text-color: "#558B2F"
+      divider-color: "rgba(76, 175, 80, 0.12)"
+      
+    dark:
+      # 暗黑模式
+      background-color: "#1B2A1B"
+      secondary-background-color: "#243524"
+      primary-text-color: "#81C784"
+      secondary-text-color: "#A5D6A7"
+      divider-color: "rgba(129, 199, 132, 0.12)"
+  
+  # 基础设备状态颜色
+  state-light-on-color: "#8BC34A"
+  state-climate-heat-color: "#FF5722"
+  state-climate-cool-color: "#00BCD4"
+  state-cover-open-color: "#4CAF50"
+  state-media_player-active-color: "#009688"
+  
+  # 传感器状态颜色
+  state-sensor-temperature-color: "#FF9800"
+  state-sensor-humidity-color: "#03A9F4"
+  state-sensor-air_quality-color: "#4CAF50"
+  state-binary_sensor-motion-active-color: "#F44336"
+  state-binary_sensor-door-active-color: "#3F51B5"
+  
+  # 安防设备状态颜色
+  state-alarm_control_panel-armed_home-color: "#FF9800"
+  state-alarm_control_panel-armed_away-color: "#F44336"
+  state-alarm_control_panel-triggered-color: "#D32F2F"
+  state-camera-recording-color: "#F44336"
+  state-lock-locked-color: "#4CAF50"
+  state-lock-unlocked-color: "#F44336"
+  
+  # 能源监测状态颜色
+  state-sensor-power-color: "#FFC107"
+  state-sensor-energy-color: "#673AB7"
+  state-sensor-water-color: "#03A9F4"
+  state-sensor-solar-color: "#FDD835"
+  
+  # 自动化相关状态颜色
+  state-automation-active-color: "#4CAF50"
+  state-scene-active-color: "#009688"
+  state-script-active-color: "#00796B"
+  
+  # 其他设备状态颜色
+  state-fan-active-color: "#03A9F4"
+  state-vacuum-active-color: "#009688"
+  state-humidifier-active-color: "#03A9F4"
+  state-switch-active-color: "#4CAF50"
+  state-input_boolean-active-color: "#00796B" 

@@ -1,0 +1,69 @@
+smart_office:
+  # 基础色彩
+  primary-color: "#0078D4"
+  accent-color: "#2B579A"
+  
+  # 通用设置
+  card-background-color: "#FFFFFF"
+  paper-card-background-color: "#FFFFFF"
+  
+  # 卡片样式
+  ha-card-border-radius: "4px"
+  ha-card-box-shadow: "0 2px 4px rgba(0,0,0,0.14)"
+  
+  modes:
+    light:
+      # 明亮模式
+      background-color: "#F5F5F5"
+      secondary-background-color: "#FFFFFF"
+      primary-text-color: "#252525"
+      secondary-text-color: "#666666"
+      divider-color: "#E1E1E1"
+      
+    dark:
+      # 暗黑模式
+      background-color: "#1F1F1F"
+      secondary-background-color: "#2D2D2D"
+      primary-text-color: "#FFFFFF"
+      secondary-text-color: "#CCCCCC"
+      divider-color: "#404040"
+  
+  # 基础设备状态颜色
+  state-light-on-color: "#0078D4"
+  state-climate-heat-color: "#D83B01"
+  state-climate-cool-color: "#0078D4"
+  state-cover-open-color: "#107C10"
+  state-media_player-active-color: "#881798"
+  
+  # 传感器状态颜色
+  state-sensor-temperature-color: "#CA5010"
+  state-sensor-humidity-color: "#0078D4"
+  state-sensor-air_quality-color: "#107C10"
+  state-binary_sensor-motion-active-color: "#D83B01"
+  state-binary_sensor-door-active-color: "#2B579A"
+  
+  # 安防设备状态颜色
+  state-alarm_control_panel-armed_home-color: "#CA5010"
+  state-alarm_control_panel-armed_away-color: "#D83B01"
+  state-alarm_control_panel-triggered-color: "#A4262C"
+  state-camera-recording-color: "#D83B01"
+  state-lock-locked-color: "#107C10"
+  state-lock-unlocked-color: "#D83B01"
+  
+  # 能源监测状态颜色
+  state-sensor-power-color: "#CA5010"
+  state-sensor-energy-color: "#881798"
+  state-sensor-water-color: "#0078D4"
+  state-sensor-solar-color: "#FFB900"
+  
+  # 自动化相关状态颜色
+  state-automation-active-color: "#107C10"
+  state-scene-active-color: "#0078D4"
+  state-script-active-color: "#2B579A"
+  
+  # 其他设备状态颜色
+  state-fan-active-color: "#0078D4"
+  state-vacuum-active-color: "#2B579A"
+  state-humidifier-active-color: "#0078D4"
+  state-switch-active-color: "#107C10"
+  state-input_boolean-active-color: "#2B579A" 
