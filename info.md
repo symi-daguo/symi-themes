@@ -1,10 +1,17 @@
-# HA Themes 2025
+# SYMI Themes
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/custom-components/hacs)
-[![ha_version](https://img.shields.io/badge/Home%20Assistant-2024.1.0-blue.svg)](https://www.home-assistant.io)
+[![ha_version](https://img.shields.io/badge/Home%20Assistant-2025.1.2-blue.svg)](https://www.home-assistant.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub Release][releases-shield]][releases]
+[![GitHub Activity][commits-shield]][commits]
 
-一套为 Home Assistant 设计的现代化主题集合，专注于2025年的设计趋势。
+[releases-shield]: https://img.shields.io/github/release/symi-daguo/symi-themes.svg
+[releases]: https://github.com/symi-daguo/symi-themes/releases
+[commits-shield]: https://img.shields.io/github/commit-activity/y/symi-daguo/symi-themes.svg
+[commits]: https://github.com/symi-daguo/symi-themes/commits/main
+
+一套为 Home Assistant 设计的现代化主题集合，专注于现代设计趋势。
 
 ## 主题列表
 
@@ -24,7 +31,7 @@
 
 ## 快速安装
 
-1. 在HACS中添加此仓库
+1. 在HACS中添加此仓库：`https://github.com/symi-daguo/symi-themes`
 2. 安装主题
 3. 重启Home Assistant
 4. 在个人资料中选择喜欢的主题

@@ -1,6 +1,17 @@
-# HA Themes 2025
+# SYMI Themes
 
-一套为 Home Assistant 设计的现代化主题集合，专注于2025年的设计趋势。
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/custom-components/hacs)
+[![ha_version](https://img.shields.io/badge/Home%20Assistant-2025.1.2-blue.svg)](https://www.home-assistant.io)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub Release][releases-shield]][releases]
+[![GitHub Activity][commits-shield]][commits]
+
+[releases-shield]: https://img.shields.io/github/release/symi-daguo/symi-themes.svg
+[releases]: https://github.com/symi-daguo/symi-themes/releases
+[commits-shield]: https://img.shields.io/github/commit-activity/y/symi-daguo/symi-themes.svg
+[commits]: https://github.com/symi-daguo/symi-themes/commits/main
+
+一套为 Home Assistant 设计的现代化主题集合，专注于现代设计趋势。
 
 ## 主题预览
 
@@ -85,9 +96,9 @@
 ### HACS 安装（推荐）
 1. 确保已安装 HACS
 2. 在 HACS 中添加自定义仓库：
-   - 仓库地址：`your-repository-url`
+   - 仓库地址：`https://github.com/symi-daguo/symi-themes`
    - 类别选择：Themes
-3. 在 HACS 的 Themes 分类中找到 "HA Themes 2025"
+3. 在 HACS 的 Themes 分类中找到 "SYMI Themes"
 4. 点击下载
 5. 重启 Home Assistant
 
@@ -119,7 +130,7 @@ frontend:
 
 ## 更新日志
 
-### v1.0.0 (2024-02)
+### v1.0.0 (2025-01-02)
 - 首次发布
 - 包含5个主题
 - 支持明暗模式
@@ -136,4 +147,4 @@ MIT License
 
 ## 支持
 
-如果遇到问题，请在 GitHub Issues 中提出。 
+如果遇到问题，请在 [GitHub Issues](https://github.com/symi-daguo/symi-themes/issues) 中提出。 
